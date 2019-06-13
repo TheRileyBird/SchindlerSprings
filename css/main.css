@@ -1,5 +1,5 @@
 /******************************************
-
+Table of Contents
     - Fonts
     - Reset Default Foundation Styling
     - Hero
@@ -13,9 +13,14 @@
     - Footer
     - Responsive CSS
 
+Color Palette
+    - Gold #f6db94
+    - Blue #2f4081
+      - Darker Blue #1b2c49
+    - Dark Gray #535353
 */
 
-/*		Fonts		*/
+/* Fonts */
 
 @font-face {
     font-family: 'lato-black';
@@ -104,8 +109,11 @@
     font-weight: normal;
     font-style: normal;
 }
+.raleway {
+  font-family: "raleway-regular", Helvetica, Arial, sans-serif;
+}
 
-/*    Reset Default Foundation Styling    */
+/* Reset Default Foundation Styling */
 .row{
 	max-width:1140px;
 	padding: 0 20px;
@@ -148,6 +156,13 @@
   color: #fff;
 }
 
+a {
+  color:#2f4081;
+}
+a:hover {
+  color:#1b2c49;
+}
+
 footer a,
 .a-white {
   color:#fff;
@@ -180,6 +195,7 @@ footer a:hover,
   margin-bottom: 1rem;
 }
 
+/* Services */
 .serv_title {
   font-family: "raleway-bold", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -189,6 +205,55 @@ footer a:hover,
 }
 .serv_description {
   color: #6c757d;
+}
+.copy2,
+.hours {
+  color: #454545;
+  font-family: "raleway-regular", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.hours td {
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 14px;
+  font-size: 16px;
+}
+table.hours tr:nth-of-type(even) {
+    background: transparent;
+}
+.no-pad {
+  padding-left: 0;
+  padding-right: 0;
+}
+.no-bottom {
+  margin-bottom: 0;
+}
+.submit {
+  font-family: "raleway-regular", Helvetica, Arial, sans-serif;
+}
+
+/* Interior Hero */
+.about_hero{
+	width: 100%;
+	height: 250px;
+	background: url('../img/black-and-white-bolts-engine.jpg') no-repeat 50% 50%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	   background-size: cover;
+}
+.contact_hero{
+	width: 100%;
+	height: 250px;
+	background: url('../img/background-chrome-spring2.jpg') no-repeat 50% 50%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	   background-size: cover;
 }
 
 /* Hero */
@@ -259,7 +324,11 @@ header{
 	height: 130px;
 	background: transparent;
 }
-
+header.int_header{
+	width: 100%;
+	height: 250px;
+	background: transparent;
+}
 .logo h1{
 	text-decoration: none;
 	color: #ffffff;
@@ -292,6 +361,10 @@ header .top-bar-section ul li a{
 	letter-spacing: .5px;
 }
 
+/* header .top-bar-section.interior_nav ul li a{
+	color: #2f4081;
+  text-shadow: 1.5px 1.5px 6px #fff;
+} */
 
 header .top-bar-section ul li:last-child a{
 	margin-right: 0;
@@ -308,7 +381,25 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 	color: #fbdd90;
 }
 
-/*    Services    */
+
+/* Sidebar */
+.sidebar{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+  font-family: "raleway-bold", Helvetica, Arial, sans-serif;
+  line-height: 3.6rem;
+  padding-top: 140px;
+}
+.sidebar a{
+  color: #2f4081;
+}
+.sidebar a:hover{
+  color: #1b2c49;
+}
+/* Services */
 .services{
 	padding: 140px 0;
 }
@@ -336,6 +427,14 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 
 .copy {
   	text-align: center;
+  	color: #454545;
+  	font-family: "raleway-regular", Helvetica, Arial, sans-serif;
+  	font-size: 22px;
+  	font-family: "raleway-light", Helvetica, Arial, sans-serif;
+  	font-weight: lighter;
+}
+.int_copy {
+  	text-align: left;
   	color: #454545;
   	font-family: "raleway-regular", Helvetica, Arial, sans-serif;
   	font-size: 22px;
@@ -375,7 +474,7 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 	margin-top: 100px;
 }
 
-/*    Fancy Button    */
+/* Fancy Button */
 .btn_fancy{
 	display: inline-block;
 	position: relative;
@@ -424,7 +523,7 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 	left: -4px;
 	width: 100%;
 	height: 100%;
-	background: #0025b0;
+	background: #2f4081;
 	border-radius: 2px;
 	-webkit-transition:all .2s ease-out;
 	     -o-transition:all .2s ease-out;
@@ -444,7 +543,7 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 	        transform:translate(-2px,2px);
 }
 
-/**    quote    **/
+/* Quote */
 .quote{
 	display: table;
 	width: 100%;
@@ -495,7 +594,7 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 	margin: 20px 0 0 0;
 }
 
-/*    Testimonials    */
+/* Testimonials */
 .testimonials{
 	width: 100%;
 	background: #ffffff;
@@ -614,7 +713,7 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 	background: #c5c5c5;
 }
 
-/*    Call To Action    */
+/* Call To Action */
 .cta{
 	background: #ffffff;
 	padding: 140px 0;
@@ -643,7 +742,31 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 	margin-top: 60px;
 }
 
-/*    Google Map    */
+/* Interior Copy */
+.int {
+	background: #ffffff;
+	padding: 140px 0;
+	/* text-align: center; */
+}
+
+.int .title{
+	color: #454545;
+	font-family: "raleway-bold", Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.int .sub_title{
+	color: #454545;
+	font-family: "raleway-light", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+	text-transform: lowercase;
+}
+
+/* Google Map */
 .map{
 	width: 100%;
 	position: relative;
@@ -661,7 +784,7 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 	z-index: 90;
 }
 
-/*    Footer    */
+/* Footer */
 
 footer{
 	padding: 80px 0;
@@ -749,7 +872,7 @@ footer p{
 	        transform:translate(-1px,1px);
 }
 
-/*    Responsive CSS    */
+/* Responsive CSS */
 @media only screen and (max-width: 40em){
 	.top-bar .top-bar-section{
 		display: none;
@@ -793,6 +916,11 @@ footer p{
 		font-size: 45px;
 		line-height: 60px;
 	}
+
+  .title,
+  .int_copy {
+    text-align: center;
+  }
 
 	footer .copyrights{
 		width: 100%;
