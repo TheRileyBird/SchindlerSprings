@@ -240,7 +240,7 @@ table.hours tr:nth-of-type(even) {
 .about_hero{
 	width: 100%;
 	height: 250px;
-	background: url('../img/black-and-white-bolts-engine.jpg') no-repeat 50% 50%;
+	background: url('../img/backgrounds/black-and-white-bolts-engine.jpg') no-repeat 50% 50%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -249,7 +249,16 @@ table.hours tr:nth-of-type(even) {
 .contact_hero{
 	width: 100%;
 	height: 250px;
-	background: url('../img/background-chrome-spring2.jpg') no-repeat 50% 50%;
+	background: url('../img/backgrounds/background-chrome-spring2.jpg') no-repeat 50% 50%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	   background-size: cover;
+}
+.services_hero{
+	width: 100%;
+	height: 250px;
+	background: url('../img/backgrounds/motorcycle.jpg') no-repeat 50% 50%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -260,7 +269,7 @@ table.hours tr:nth-of-type(even) {
 .hero{
 	width: 100%;
 	height: 750px;
-	background: url('../img/springhero.jpg') no-repeat 50% 50%;
+	background: url('../img/backgrounds/springhero.jpg') no-repeat 50% 50%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -305,18 +314,19 @@ table.hours tr:nth-of-type(even) {
 	padding-bottom: 3px;
 }
 
-.hero .caption .btn_details .arrow{
+.hero .caption .btn_details .arrow {
 	-webkit-transition:all .2s ease-out;
 	     -o-transition:all .2s ease-out;
 	        transition:all .2s ease-out;
 }
 
-.hero .caption .btn_details:hover .arrow{
+.hero .caption .btn_details:hover .arrow:hover {
 	-webkit-transform:translateX(3px);
 	    -ms-transform:translateX(3px);
 	     -o-transform:translateX(3px);
 	        transform:translateX(3px);
 }
+
 
 /* Header */
 header{
@@ -381,6 +391,16 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 	color: #fbdd90;
 }
 
+/* Page Title */
+.page_title {
+  text-align: center;
+  color: #454545;
+  font-size: 50px;
+  font-family: "raleway-bold", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 40px;
+}
 
 /* Sidebar */
 .sidebar{
@@ -391,7 +411,7 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
   text-align: left;
   font-family: "raleway-bold", Helvetica, Arial, sans-serif;
   line-height: 3.6rem;
-  padding-top: 140px;
+  padding-top: 134px;
 }
 .sidebar a{
   color: #2f4081;
@@ -399,9 +419,13 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 .sidebar a:hover{
   color: #1b2c49;
 }
+.sidebar .active-sidebar {
+  color: #5d7ac3;
+}
+
 /* Services */
 .services{
-	padding: 140px 0;
+	padding: 110px 0;
 }
 
 .services .mean_title,
@@ -472,6 +496,10 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 
 .services .btn_fancy{
 	margin-top: 100px;
+}
+
+.spacer {
+  margin-bottom: 3rem;
 }
 
 /* Fancy Button */
@@ -548,7 +576,7 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 	display: table;
 	width: 100%;
 	height: 450px;
-	background: url('../img/sectionbg.jpg') no-repeat 50% 50%;
+	background: url('../img/backgrounds/sectionbg.jpg') no-repeat 50% 50%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -717,7 +745,7 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 .cta{
 	background: #ffffff;
 	padding: 140px 0;
-	background: url('../img/cubes.png') repeat;
+	background: url('../img/icons/cubes.png') repeat;
 	text-align: center;
 }
 
@@ -774,10 +802,10 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
   line-height: 0!important;
 }
 
-.map .shadow{
+.map.shadow{
 	width: 100%;
 	height: 158px;
-	background: url('../img/shadow.png') repeat-x;
+	background: url('../img/backgrounds/shadow.png') repeat-x;
 	position: absolute;
 	bottom: -1px;
 	left: 0;
