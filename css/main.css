@@ -179,10 +179,16 @@ footer a:hover,
   box-shadow: 0 0 0 1px #fbdd90, 0 7px 0 1px #fbdd90, 0 14px 0 1px #fbdd90;
 }
 
-/* Menu Animation */
+/* Animation */
 .spring {
   -webkit-animation: swing .8s ease;
   animation: swing .8s ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+.fadeInWoah {
+  -webkit-animation: fadeIn .8s ease;
+  animation: fadeIn .8s ease-in-out;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
@@ -193,6 +199,11 @@ footer a:hover,
   font-size: 3rem;
   margin: 0;
   margin-bottom: 1rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.serv_icon .fas:hover{
+  font-size: 4rem;
 }
 
 /* Services */
@@ -225,6 +236,15 @@ footer a:hover,
   color: #2f4081;
   text-align: center;
 }
+.card img {
+  filter: grayscale(100%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.card img:hover {
+  filter: none;
+}
+
 .hours td {
   padding-left: 0;
   padding-top: 0;
@@ -752,9 +772,9 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 
 /* Call To Action */
 .cta{
-	background: #9aa7da;
+	background: #e4e6ec;
 	padding: 140px 0;
-	background: url('../img/icons/cubes.png') repeat;
+	/* background: url('../img/icons/cubes.png') repeat; */
 	text-align: center;
 }
 
@@ -812,16 +832,6 @@ header .top-bar-section li:not(.has-form) a:not(.button):hover{
 	position: relative;
 	overflow: hidden;
   line-height: 0!important;
-}
-
-.map.shadow{
-	width: 100%;
-	height: 158px;
-	background: url('../img/backgrounds/shadow.png') repeat-x;
-	position: absolute;
-	bottom: -1px;
-	left: 0;
-	z-index: 90;
 }
 
 /* Footer */
