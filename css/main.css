@@ -216,7 +216,7 @@ footer a:hover,
   font-size: 4rem;
 }
 
-/* Services */
+/* Products */
 .serv_title {
   font-family: "raleway-bold", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -273,6 +273,11 @@ table.hours tr:nth-of-type(even) {
 }
 .submit {
   font-family: "raleway-regular", Helvetica, Arial, sans-serif;
+}
+
+/* Orbit */
+.orbit-bullets-container {
+  display: none;
 }
 
 /* Interior Hero */
